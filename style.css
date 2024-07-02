@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Neue";
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+/*DISEÑOS POR DEFECTO*/
+
+ol,
+ul {
+  list-style: none; /*Elimina los puntos y los numeros de las listas*/
+}
+
+a {
+  text-decoration: none; /*Elimina la decoracion de los links*/
+  color: #fff; /*Cambia el color de todos los links*/
+}
+
+/*HEADER*/
+header {
+  display: flex;
+  background-color: #292; /*Color de fondo del header*/
+  align-items: center; /*Centra los elemento al nivel central de la caja*/
+  justify-content: space-between; /*Separa los elementos*/
+  height: 80px; /*Altura del header*/
+  padding: 0 1.5em; /*Padding a los costados*/
+}
+
+header nav ul {
+  display: flex;
+  gap: 1em; /*Espaciado de las listas*/
+}
+
+.logo {
+  font-size: 1.5em; /*Tamalo del logo*/
+}
+
+/*MAIN*/
+.greeting {
+  background-color: #292;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 1em;
+}
+/*SECTION 1*/
+.seccion-1 {
+  display: flex;
+  align-items: center; /*Centra los elemento al nivel central de la caja*/
+  justify-content: center; /*Centra los elementos al centro de la caja*/
+  flex-direction: row-reverse; /*Revierte los elementos*/
+  flex-wrap: wrap; /*Los elementos se ajustan en lineas*/
+  padding: 4em; /*Padding a los todas las direcciones*/
+  gap: 2em; /*Espacido de los elementos*/
+}
+
+.acerca-de {
+  display: flex;
+  width: 100%; /*Ancho al 100% de la caja*/
+  max-width: 300px; /*Ancho limite*/
+  flex-direction: column; /*Los lementos estan el columna*/
+  text-align: right; /*Los elementos se posicionan a la derecha*/
+  gap: 1em; /*Espaciado de los elementos*/
+}
+
+.img {
+  display: flex;
+  width: 100%; /*Ancho al 100% de la caja*/
+  max-width: 300px; /*Ancho limite*/
+  border-radius: 2.5%; /*Radio del borde*/
+}
+
+/*SECTION 2*/
+.seccion-2 img {
+  display: flex;
+  width: 100%; /*Ancho al 100% de la caja, al no haber un max-width, no hay limite*/
+}
+
+/*SECTION 3*/
+.titulo-trabajo {
+  display: flex;
+  justify-content: center; /*Centra los elemento al nivel central de la caja*/
+  margin-top: 1em; /*Margin hacia la direccion de arriba*/
+}
+
+.seccion-3 {
+  display: flex;
+  justify-content: center; /*Centra los elemento al nivel central de la caja*/
+  flex-wrap: wrap; /*Los elementos se ajustan en lineas*/
+  padding: 1em; /*Padding a los todas las direcciones*/
+  gap: 2em; /*Espaciado de los elementos*/
+}
+
+.trabajos {
+  text-align: center; /*Centra el texto*/
+  width: 100%; /*Ancho al 100% de la caja*/
+  max-width: 500px; /*Ancho limite*/
+}
+
+.trabajos img {
+  width: 100%; /*Ancho al 100%*/
+  max-width: 500px; /*Ancho limite*/
+  border: 1px solid #292; /*Color de borde*/
+  border-radius: 2.5%; /*Radio del borde*/
+  transition: 0.2s; /*Tiempo de transicion del hover*/
+}
+
+.trabajos img:hover {
+  transform: scale(1.1);
+} /*Aumenta la escala de la imagen, sin afectar a los demas elementos*/
+
+.trabajos h3 {
+  margin-top: 1em; /*Margin de separacion img*/
+}
+
+.trabajos p {
+  margin-top: 0.5em; /*Margin de separacion h3*/
+}
+
+.trabajos a {
+  margin-top: 0.5em; /*Margin de separacion a*/
+  color: #000; /*Color en especifico para este link*/
+}
+
+/*SECTION 4*/
+
+.seccion-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-4 {
+  text-align: center;
+  background-color: #1a691a;
+  border: 1px solid #292;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 2em auto;
+  padding: 2em;
+}
+
+.seccion-4 h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.seccion-4 h1,
+.seccion-4 p {
+  color: #ffffff;
+}
+
+#alertas {
+  color: #000;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #ffffff;
+  border: 1px solid #292;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #ffffff;
+  border: 1px solid #292;
+  border-radius: 6px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+  width: 100%;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #292;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #1a691a;
+}
+
+.form-row button:active {
+  background-color: #292;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #292; /*Color de fondo del footer*/
+  color: #fff; /*Color de texto*/
+  text-align: center; /*Texto centrado*/
+  display: flex;
+  align-items: center; /*Centra los elemento al nivel central de la caja*/
+  justify-content: center; /*Centra los elementos al centro de la caja*/
+  flex-direction: column; /*Los lementos estan el columna*/
+  padding: 2em; /*Padding a los todas las direcciones*/
+  gap: 1em; /*Espaciado de los elementos*/
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column; /*Los lementos estan el columna*/
+  gap: 1em; /*Espaciado de los elementos*/
+}
+
+#check {
+  display: none;
+}
+
+.boton-egg {
+  position: fixed; /*Posicion fija sin importar que*/
+  bottom: 1em; /*Espaciado de abajo*/
+  right: 1em; /*Espaciado derecho*/
+  color: #ffffff; /*Color especifico*/
+  font-size: 2em; /*Tamaño de elemento*/
+}
+
+.checkbtn {
+  font-size: 1.5em; /*Tamaño de boton*/
+  color: #fff; /*Color de boton*/
+  float: right; /*El elemento flotara hacia la derecha*/
+  cursor: pointer; /*El puntero cambia a una mano*/
+  display: none; /*Oculta el elemento*/
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+
+@media (max-width: 768px) {
+  .acerca-de {
+    text-align: center; /*Centra el texto*/
+  }
+
+  header nav ul {
+    display: block; /*Para que no se rompa el diseño al cerrar el nav*/
+  }
+
+  .checkbtn {
+    display: block; /*Aparece el elemento oculto*/
+  }
+
+  header nav ul {
+    position: fixed; /*Posicion fija sin importar que*/
+    width: 100%; /*Ancho al 100% de la caja*/
+    height: 100vh; /*Altura al 100%*/
+    background-color: #1a691a; /*Color del nav*/
+    text-align: center;
+
+    top: 80px; /*80px de distancia hacia la parte superior*/
+    left: 100%; /*Ocupa el 100% de su lado izquierdo*/
+    transition: 0.5s; /*Tiempo de transicion*/
+  }
+
+  #check:checked ~ ul {
+    left: 0; /*Ocupa el 0% de su lado izquierdo*/
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 50px 0; /*Margin superior e inferior*/
+  }
+
+  header nav ul li a {
+    font-size: 20px; /*Tamaño de texto*/
+  }
+
+  #check:checked ~ .checkbtn {
+    color: #1a691a; /*Color de boton al presionar*/
+  }
+
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+
+  .form-row textarea {
+    width: 250px;
+  }
+
+  .form-row button {
+    margin-left: 120px;
+  }
+}
